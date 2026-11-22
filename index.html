@@ -56,6 +56,18 @@
   .devices .dot { opacity: .5; }
   .cta { text-align: center; margin-top: 24px; }
 
+  /* Gameplay teaser: no text in the video, so one file serves every language. Plays muted
+     and looped while on screen; the round button turns the music on. */
+  .trailer { position: relative; margin-top: 40px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: #000; aspect-ratio: 16 / 9; box-shadow: 0 20px 60px -20px rgba(0, 0, 0, .7); }
+  .trailer video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .sound { position: absolute; right: 16px; bottom: 16px; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); background: rgba(7, 13, 29, .7); color: #fff; cursor: pointer; display: grid; place-items: center; }
+  .sound:hover { background: rgba(7, 13, 29, .9); }
+  .sound svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .sound svg path:first-child { fill: currentColor; }
+  .sound .wave { display: none; }
+  .sound.on .wave { display: inline; }
+  .sound.on .mute { display: none; }
+
   /* One spacing scale everywhere: 8 / 16 / 24 / 56. */
   h2 { font: 700 30px/1.15 Rajdhani, system-ui, sans-serif; margin: 56px 0 8px; text-align: center; }
   .sub { color: var(--muted); text-align: center; margin: 0 auto 24px; max-width: 620px; }
@@ -110,6 +122,10 @@
 
   footer { color: var(--muted); font-size: 14px; text-align: center; padding: 56px 0 40px; }
   footer b { color: var(--text); }
+  footer .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin: 16px 0 8px; }
+  footer .links a { color: var(--text); text-decoration: none; font-weight: 600; }
+  footer .links a:hover { color: var(--accent); }
+  footer .links .dot { opacity: .5; }
 
   /* Right-to-left languages (Arabic). */
   [dir="rtl"] ol li { padding-left: 0; padding-right: 36px; }
@@ -165,6 +181,11 @@
     </div>
     <div class="cta"><a class="btn big" href="#play" data-i="cta">Play for free</a></div>
   </section>
+
+  <div class="trailer">
+    <video id="trailer" src="video/teaser.mp4" poster="video/teaser_poster.jpg" muted loop playsinline preload="metadata" aria-label="Obstacle Chaos gameplay"></video>
+    <button class="sound" id="sound" type="button" aria-label="Sound on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="wave" d="M16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11"/><path class="mute" d="M16 9l5 6M21 9l-5 6"/></svg></button>
+  </div>
 
   <div class="features">
     <div class="feature"><div class="big">20</div><h3><span data-i="f1h">Characters</span> <small data-i="sofar">so far</small></h3><p data-i="f1p">From a granny in a tracksuit to a samurai, a T-Rex and a hotdog. Every one with their own emote.</p></div>
@@ -230,7 +251,7 @@
     <a class="btn white big" href="https://discord.gg/Ec9TWgdMdy" data-i="cbtn">Join the Discord</a>
   </section>
 
-  <footer><b data-i="fb">Free beta:</b> <span data-i="fr">play it, test it, have fun. All feedback is welcome!</span><br>© 2026 IRoyable Games</footer>
+  <footer><b data-i="fb">Free beta:</b> <span data-i="fr">play it, test it, have fun. All feedback is welcome!</span><nav class="links"><a href="privacy/" data-i="privacy">Privacy policy</a><span class="dot">•</span><a href="mailto:IRoyableGames@outlook.com" data-i="contact">Contact</a><span class="dot">•</span><a href="https://discord.gg/Ec9TWgdMdy">Discord</a></nav>© 2026 IRoyable Games</footer>
 </div>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot"><img alt=""></div>
@@ -260,6 +281,26 @@
     function close() { box.classList.remove("open"); }
     box.addEventListener("click", close);
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+  })();
+
+  // Teaser: play (muted) only while on screen, so it costs nothing further down the page.
+  (function () {
+    var v = document.getElementById("trailer");
+    var btn = document.getElementById("sound");
+    if (!v) return;
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { v.play().catch(function () {}); } else { v.pause(); } });
+      }, { threshold: 0.25 }).observe(v);
+    } else {
+      v.play().catch(function () {});
+    }
+    btn.addEventListener("click", function () {
+      v.muted = !v.muted;
+      btn.classList.toggle("on", !v.muted);
+      btn.setAttribute("aria-label", v.muted ? "Sound on" : "Sound off");
+      if (!v.muted) v.play().catch(function () {});
+    });
   })();
 
   // Put the visitor's own device first and highlight it.

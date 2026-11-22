@@ -31,7 +31,7 @@ window.I18N = {
     ch: "Word lid van de community",
     cp: "Obstacle Chaos wordt gemaakt door een indie-developer die écht luistert. Veel updates komen rechtstreeks uit ideeën van spelers, en ze komen snel. Kom gezellig langs en help het spel mee vormgeven.",
     c1: "🏆 Deel je beste tijden", c2: "👀 Zie als eerste nieuwe werelden &amp; personages", c3: "💬 Deel je ideeën en feedback", c4: "🔔 Blijf op de hoogte van elke update",
-    cbtn: "Join de Discord", fb: "Gratis beta:", fr: "speel het, test het, heb plezier. Alle feedback is welkom!"
+    cbtn: "Join de Discord", privacy: "Privacybeleid", contact: "Contact", fb: "Gratis beta:", fr: "speel het, test het, heb plezier. Alle feedback is welkom!"
   },
   es: {
     h1a: "Circuitos salvajes. Personajes alocados.", h1b: "Puro caos.",
@@ -62,7 +62,7 @@ window.I18N = {
     ch: "Únete a la comunidad",
     cp: "Obstacle Chaos lo crea un desarrollador indie que de verdad escucha. Muchas actualizaciones nacen de ideas de los jugadores, y llegan rápido. Ven a pasar el rato y ayuda a dar forma al juego.",
     c1: "🏆 Comparte tus mejores tiempos", c2: "👀 Sé el primero en ver nuevos mundos y personajes", c3: "💬 Comparte tus ideas y opiniones", c4: "🔔 Entérate de cada actualización",
-    cbtn: "Únete al Discord", fb: "Beta gratis:", fr: "juega, pruébalo y diviértete. ¡Todas las opiniones son bienvenidas!"
+    cbtn: "Únete al Discord", privacy: "Política de privacidad", contact: "Contacto", fb: "Beta gratis:", fr: "juega, pruébalo y diviértete. ¡Todas las opiniones son bienvenidas!"
   },
   fr: {
     h1a: "Des parcours fous. Des personnages déjantés.", h1b: "Le chaos total.",
@@ -93,7 +93,7 @@ window.I18N = {
     ch: "Rejoins la communauté",
     cp: "Obstacle Chaos est créé par un développeur indé qui écoute vraiment. Beaucoup de mises à jour viennent directement des idées des joueurs, et elles arrivent vite. Viens traîner avec nous et aide à façonner le jeu.",
     c1: "🏆 Partage tes meilleurs temps", c2: "👀 Découvre en premier les nouveaux mondes et personnages", c3: "💬 Partage tes idées et tes avis", c4: "🔔 Reste informé de chaque mise à jour",
-    cbtn: "Rejoindre le Discord", fb: "Bêta gratuite :", fr: "joue, teste, amuse-toi. Tous les avis sont les bienvenus !"
+    cbtn: "Rejoindre le Discord", privacy: "Politique de confidentialité", contact: "Contact", fb: "Bêta gratuite :", fr: "joue, teste, amuse-toi. Tous les avis sont les bienvenus !"
   },
   de: {
     h1a: "Wilde Parcours. Verrückte Figuren.", h1b: "Pures Chaos.",
@@ -124,7 +124,7 @@ window.I18N = {
     ch: "Werde Teil der Community",
     cp: "Obstacle Chaos wird von einem Indie-Entwickler gemacht, der wirklich zuhört. Viele Updates kommen direkt aus Ideen der Spieler, und sie kommen schnell. Schau vorbei und gestalte das Spiel mit.",
     c1: "🏆 Teile deine Bestzeiten", c2: "👀 Sieh neue Welten &amp; Figuren als Erster", c3: "💬 Teile deine Ideen und dein Feedback", c4: "🔔 Bleib bei jedem Update auf dem Laufenden",
-    cbtn: "Dem Discord beitreten", fb: "Kostenlose Beta:", fr: "spielen, testen, Spaß haben. Jedes Feedback ist willkommen!"
+    cbtn: "Dem Discord beitreten", privacy: "Datenschutz", contact: "Kontakt", fb: "Kostenlose Beta:", fr: "spielen, testen, Spaß haben. Jedes Feedback ist willkommen!"
   },
   pt: {
     h1a: "Percursos malucos. Personagens doidos.", h1b: "Caos total.",
@@ -155,7 +155,7 @@ window.I18N = {
     ch: "Entre na comunidade",
     cp: "Obstacle Chaos é feito por um desenvolvedor indie que realmente escuta. Muitas atualizações vêm direto das ideias dos jogadores, e chegam rápido. Venha bater papo e ajude a moldar o jogo.",
     c1: "🏆 Compartilhe seus melhores tempos", c2: "👀 Veja primeiro os novos mundos e personagens", c3: "💬 Compartilhe suas ideias e opiniões", c4: "🔔 Fique por dentro de cada atualização",
-    cbtn: "Entrar no Discord", fb: "Beta grátis:", fr: "jogue, teste e divirta-se. Toda opinião é bem-vinda!"
+    cbtn: "Entrar no Discord", privacy: "Política de privacidade", contact: "Contato", fb: "Beta grátis:", fr: "jogue, teste e divirta-se. Toda opinião é bem-vinda!"
   },
   ru: {
     h1a: "Безумные трассы. Чудные герои.", h1b: "Полный хаос.",
@@ -186,7 +186,7 @@ window.I18N = {
     ch: "Присоединяйся к сообществу",
     cp: "Obstacle Chaos делает инди-разработчик, который действительно слушает. Многие обновления рождаются из идей игроков и выходят быстро. Заходи пообщаться и помоги сделать игру лучше.",
     c1: "🏆 Делись лучшими временами", c2: "👀 Первым узнавай о новых мирах и персонажах", c3: "💬 Делись идеями и отзывами", c4: "🔔 Будь в курсе каждого обновления",
-    cbtn: "Зайти в Discord", fb: "Бесплатная бета:", fr: "играй, тестируй, веселись. Любые отзывы приветствуются!"
+    cbtn: "Зайти в Discord", privacy: "Политика конфиденциальности", contact: "Контакты", fb: "Бесплатная бета:", fr: "играй, тестируй, веселись. Любые отзывы приветствуются!"
   },
   zh: {
     h1a: "疯狂赛道，搞怪角色。", h1b: "纯粹混乱！",
@@ -217,7 +217,7 @@ window.I18N = {
     ch: "加入社区",
     cp: "Obstacle Chaos 由一位真正倾听玩家的独立开发者制作。很多更新直接来自玩家的点子，而且上线很快。快来一起玩，帮助塑造这款游戏。",
     c1: "🏆 分享你的最佳成绩", c2: "👀 抢先看到新世界和新角色", c3: "💬 分享你的想法和反馈", c4: "🔔 及时了解每次更新",
-    cbtn: "加入 Discord", fb: "免费测试版：", fr: "来玩、来测、来开心。欢迎任何反馈！"
+    cbtn: "加入 Discord", privacy: "隐私政策", contact: "联系我们", fb: "免费测试版：", fr: "来玩、来测、来开心。欢迎任何反馈！"
   },
   ja: {
     h1a: "ハチャメチャなコース。個性的なキャラたち。", h1b: "まさにカオス！",
@@ -248,7 +248,7 @@ window.I18N = {
     ch: "コミュニティに参加しよう",
     cp: "Obstacle Chaos は、プレイヤーの声にちゃんと耳を傾けるインディー開発者が作っています。アップデートの多くはプレイヤーのアイデアから生まれ、すぐに届きます。気軽に遊びに来て、一緒にゲームを作っていこう。",
     c1: "🏆 ベストタイムをシェア", c2: "👀 新ワールドや新キャラをいち早くチェック", c3: "💬 アイデアや感想をシェア", c4: "🔔 アップデート情報をいつでもキャッチ",
-    cbtn: "Discord に参加", fb: "無料ベータ：", fr: "遊んで、テストして、楽しんで。どんな感想も大歓迎！"
+    cbtn: "Discord に参加", privacy: "プライバシーポリシー", contact: "お問い合わせ", fb: "無料ベータ：", fr: "遊んで、テストして、楽しんで。どんな感想も大歓迎！"
   },
   hi: {
     h1a: "जंगली कोर्स। अजब-गजब किरदार।", h1b: "पूरी अफरा-तफरी!",
@@ -279,7 +279,7 @@ window.I18N = {
     ch: "कम्युनिटी से जुड़ो",
     cp: "Obstacle Chaos एक इंडी डेवलपर बना रहा है जो सच में सुनता है। कई अपडेट सीधे खिलाड़ियों के आइडिया से आते हैं, और जल्दी आते हैं। आओ, साथ मिलकर गेम को बेहतर बनाओ।",
     c1: "🏆 अपने बेस्ट टाइम शेयर करो", c2: "👀 नई दुनियाएँ और किरदार सबसे पहले देखो", c3: "💬 अपने आइडिया और फ़ीडबैक शेयर करो", c4: "🔔 हर अपडेट की खबर पाओ",
-    cbtn: "Discord जॉइन करें", fb: "फ्री बीटा:", fr: "खेलो, टेस्ट करो, मज़े करो। हर फ़ीडबैक का स्वागत है!"
+    cbtn: "Discord जॉइन करें", privacy: "प्राइवेसी पॉलिसी", contact: "संपर्क", fb: "फ्री बीटा:", fr: "खेलो, टेस्ट करो, मज़े करो। हर फ़ीडबैक का स्वागत है!"
   },
   ar: {
     h1a: "مسارات جامحة. شخصيات مجنونة.", h1b: "فوضى خالصة!",
@@ -310,6 +310,6 @@ window.I18N = {
     ch: "انضم إلى المجتمع",
     cp: "يصنع Obstacle Chaos مطوّر مستقل يستمع حقًا. كثير من التحديثات تأتي مباشرة من أفكار اللاعبين، وتصل بسرعة. تعال وشارك في تشكيل اللعبة.",
     c1: "🏆 شارك أفضل أوقاتك", c2: "👀 كن أول من يرى العوالم والشخصيات الجديدة", c3: "💬 شارك أفكارك وملاحظاتك", c4: "🔔 ابقَ على اطلاع بكل تحديث",
-    cbtn: "انضم إلى Discord", fb: "نسخة تجريبية مجانية:", fr: "العب، جرّب، واستمتع. نرحب بكل الملاحظات!"
+    cbtn: "انضم إلى Discord", privacy: "سياسة الخصوصية", contact: "تواصل معنا", fb: "نسخة تجريبية مجانية:", fr: "العب، جرّب، واستمتع. نرحب بكل الملاحظات!"
   }
 };
