@@ -73,6 +73,8 @@
   .world-head { display: flex; align-items: baseline; gap: 8px 16px; flex-wrap: wrap; margin-bottom: 16px; }
   .world-head b { font: 700 24px/1 Rajdhani, sans-serif; }
   .world-head span { color: var(--muted); font-size: 15px; }
+  /* Plain label (not a button): these shots are only a taste of each course. */
+  .world-head .peek { flex-basis: 100%; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .12em; }
   .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .shots button { all: unset; cursor: zoom-in; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); display: block; }
   .shots button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -172,13 +174,13 @@
   </div>
 
   <h2 data-i="wh">Five worlds to conquer</h2>
-  <p class="sub" data-i="wsub">Each world has its own look, its own obstacles and its own surprises. Tap a screenshot to see it bigger.</p>
+  <p class="sub" data-i="wsub">Just a sneak peek: every course is far longer than these shots and packed with many more obstacles and surprises. Tap a screenshot to see it bigger.</p>
   <div class="worlds">
-    <div class="world" data-world="skyline_showdown"><div class="world-head"><b>Skyline Showdown</b><span data-i="w1">A golden-hour gauntlet high above the city</span></div></div>
-    <div class="world" data-world="jungle_ruins"><div class="world-head"><b>Jungle Ruins</b><span data-i="w2">Rolling boulders, snapping crocs and temple traps</span></div></div>
-    <div class="world" data-world="sweet_factory"><div class="world-head"><b>Sweet Factory</b><span data-i="w3">Chocolate rivers, candy cannons and a giant lollipop</span></div></div>
-    <div class="world" data-world="frozen_peaks"><div class="world-head"><b>Frozen Peaks</b><span data-i="w4">Slippery ice, robot hockey players and a very grumpy yeti</span></div></div>
-    <div class="world" data-world="lava_labs"><div class="world-head"><b>Lava Labs</b><span data-i="w5">The hardest course of all. One touch and you're toast</span></div></div>
+    <div class="world" data-world="skyline_showdown"><div class="world-head"><span class="peek" data-i="peek">SNEAK PEEK</span><b>Skyline Showdown</b><span data-i="w1">A golden-hour gauntlet high above the city</span></div></div>
+    <div class="world" data-world="jungle_ruins"><div class="world-head"><span class="peek" data-i="peek">SNEAK PEEK</span><b>Jungle Ruins</b><span data-i="w2">Rolling boulders, snapping crocs and temple traps</span></div></div>
+    <div class="world" data-world="sweet_factory"><div class="world-head"><span class="peek" data-i="peek">SNEAK PEEK</span><b>Sweet Factory</b><span data-i="w3">Chocolate rivers, candy cannons and a giant lollipop</span></div></div>
+    <div class="world" data-world="frozen_peaks"><div class="world-head"><span class="peek" data-i="peek">SNEAK PEEK</span><b>Frozen Peaks</b><span data-i="w4">Slippery ice, robot hockey players and a very grumpy yeti</span></div></div>
+    <div class="world" data-world="lava_labs"><div class="world-head"><span class="peek" data-i="peek">SNEAK PEEK</span><b>Lava Labs</b><span data-i="w5">The hardest course of all. One touch and you're toast</span></div></div>
   </div>
 
   <h2 id="play" data-i="ph">How to play</h2>
