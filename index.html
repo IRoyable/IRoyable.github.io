@@ -249,7 +249,6 @@
         var img = document.createElement("img");
         img.src = "img/" + id + "_" + i + ".jpg";
         img.alt = name + " screenshot " + i;
-        img.loading = "lazy";
         b.appendChild(img);
         b.addEventListener("click", function () { big.src = this.firstChild.src; big.alt = this.firstChild.alt; box.classList.add("open"); });
         row.appendChild(b);
